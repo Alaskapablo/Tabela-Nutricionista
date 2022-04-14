@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tabela Nutricionista</title>
+</head>
+<body>
+<header class="header">
+    <p class="header-title">
+        Nabokov Nutricionista
+    </p>
+    <nav class="header-nav">
+        <ul class="header-nav__list">
+            <li class="header-nav__item">
+                <button type="button" class="header-nav__btn">Home</button>
+            </li>
+            <li class="header-nav__item">
+                <button type="button" class="header-nav__btn">Address</button>
+            </li>
+            <li class="header-nav__item">
+                <button type="button" class="header-nav__btn">Profile</button>
+            </li>
+            <li class="header-nav__item">
+                <button type="button" class="header-nav__btn">Exit</button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="container-main">
+        <div class="block-title">
+            <h1 class="main-title">
+                Meus pacientes
+            </h1>
+        </div>
+        <label for="filter-table" class="label-main">Filtre:</label>
+        <input type="text" name="filtro" id="filter-table" placeholder="Digite o nome do paciente">
+        <table class="table">
+            <thead class="table-head">
+                <tr class="talbe-tr__head">
+                    <th class="table-td__head">Nome</th>
+                    <th class="table-td__head">Peso(kg)</th>
+                    <th class="table-td__head">Altura(m)</th>
+                    <th class="table-td__head">Gordura Corporal(%)</th>
+                    <th class="table-td__head">IMC</th>
+                </tr>
+            </thead>
+            <tbody class="table-tbody">
+                <tr class="patient">
+                    <td class="info-name">Cris</td>
+                    <td class="info-peso">80</td>
+                    <td class="info-altura">1.70</td>
+                    <td class="info-gordura">37</td>
+                    <td class="info-imc">0</td>
+                </tr>
+                <tr class="patient">
+                    <td class="info-name">Daniel</td>
+                    <td class="info-peso">68</td>
+                    <td class="info-altura">1.71</td>
+                    <td class="info-gordura">37</td>
+                    <td class="info-imc">0</td>
+                </tr>
+                <tr class="patient">
+                    <td class="info-name">Jorge</td>
+                    <td class="info-peso">68</td>
+                    <td class="info-altura">1.71</td>
+                    <td class="info-gordura">37</td>
+                    <td class="info-imc">0</td>
+                </tr>
+                <tr class="patient">
+                    <td class="info-name">Davi</td>
+                    <td class="info-peso">68</td>
+                    <td class="info-altura">1.71</td>
+                    <td class="info-gordura">37</td>
+                    <td class="info-imc">0</th>
+                </tr>
+            </tbody>
+        </table>
+        <!-- <button type="button" class="btn-search">
+            Buscar Pacientes
+        </button> -->
+    </section>
+    <section class="section-new-patient">
+        <h2 class="new-title">
+            Adicionar novo paciente
+        </h2>
+        <ul id="msg-error">
+        </ul>
+        <form class="form-add">
+            <div class="grup-form">
+                <label for="nome">Nome:</label>
+                <input id="input-name" type="text" name="name" placeholder="Digite o nome do seu paciente" class="input-form">
+            </div>
+            <div class="grup-form">
+                <label for="peso">Peso:</label>
+                <input id="input-peso" type="text" name="peso" placeholder="Digite o peso do seu paciente" class="input-form">
+            </div>
+            <div class="grup-form">
+                <label for="altura">Altura:</label>
+                <input id="input-altura" type="text" name="altura" placeholder="Digite a altura do seu paciente" class="input-form">
+            </div>
+            <div class="grup-form">
+                <label for="gordura">% de Gordura:</label>
+                <input id="input-gordura" type="text" name="gordura" placeholder="Digite a porcentagem de gordura do seu paciente" class="input-form">
+            </div>
+            <button id="add-patient" class="btn-add-patient">
+                Adicionar
+            </button>
+        </form>
+    </section>
+</main>
+    
+</body>
+
+<script src="./js/calc-imc.js"></script>
+<script src="./js/form.js"></script>
+<script src="./js/filter.js"></script>
+<script src="./js/remove.js"></script>
+<script src="./js/search-patient.js"></script>
+</html> 

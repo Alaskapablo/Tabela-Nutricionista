@@ -1,0 +1,178 @@
+body{
+    font-family: 'Lato', sans-serif;
+    background: #F2F2F2;
+}
+
+input{
+    width: 190px;
+    height: 35px;
+}
+/* Header */
+
+.header{
+    background-color: #272167;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #D8D8E3;
+}
+.header-nav__list{
+    display: flex;
+}
+.header-nav__item{
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+.header-nav__item:not(:last-child){
+    margin-right: 15px;
+}
+.header-nav__btn{
+    color: #D8D8E3;
+}
+
+
+/* Main */
+.container-main{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.block-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.main-title{
+    margin-left: 25px;
+    font-size: 38px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #272167;
+}
+.label-main{
+    display: block;
+    margin-bottom: 2px;
+    font-size: 16px;
+    color: #272167;
+}
+input::placeholder{
+    font-size: 15px;
+    color: #6e6d6d;
+}
+
+/* table */
+
+.section-table{
+    display: flex;
+    justify-content: center;
+}
+.table{
+    width: 100%;
+    margin-top: 5px;
+}
+.patient{
+    background: rgb(204, 185, 230);
+    height: 35px;
+    text-align: center;
+    color: #00010e;
+}
+.table-td__head{
+    font-weight: bold;
+    background: #707ecd;
+    color: #ffffff;
+    width: 10px;
+    height: 35px;
+}
+td{
+    padding: .7em;
+    margin: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* button search patient */
+.btn-search{
+    width: 116px;
+    height: 48px;
+    background: #4055cb;
+    border-bottom: 3px solid #272167;
+    color: #FFFFFF;
+    margin-top: 4px;
+    margin-left: 2px;
+}
+
+/* section new patient */
+.section-new-patient{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+.new-title{
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #272167;
+}
+
+/* form for add patient */
+.form-add{
+  
+    margin-bottom: 50px;
+}
+
+.grup-form{
+    display: inline-block;
+    width: 32%;
+    padding: 10px 0px;
+}
+label{
+    display: block;
+    color: #424242;
+}
+.input-form{
+    width: 245px;
+    height: 36px;
+}
+.input-form::placeholder{
+    font-size: 13px;
+    color: #6e6d6d;
+}
+.btn-add-patient{
+    display: block;
+    padding: 10px 5px;
+    width: 116px;
+    height: 40px;
+    background: #4055cb;
+    color: #FFFFFF;
+    border-bottom: 2px solid #272167;
+}
+
+/* error end change with js */
+.patient-invalid{
+    background: #ea8484;
+}
+#msg-error{
+    color: #e12525;
+}
+
+.fade-out{
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.hidden{
+    display: none;
+}
